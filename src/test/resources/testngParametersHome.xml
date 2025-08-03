@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AllTests Suite" parallel = "classes" thread-count = "2">
+    <test name="AllTests">
+        <parameter name="email1" value="testovyiivan@mail.ru"/>
+        <parameter name="password1" value="1234567R"/>
+        <parameter name="email2" value="mail2f@mail.ru"/>
+        <parameter name="password2" value="123465690"/>
+        <parameter name="email3" value="mail3qqq@gmail.com"/>
+        <parameter name="password3" value="1234000u"/>
+        <classes>
+            <class name="parameterization.Parameterization_task5"/>
+            <methods>
+                <include name="testLoginWithParameters1"/>
+                <include name="testLoginWithParameters2"/>
+                <include name="testLoginWithParameters3"/>
+            </methods>
+        </classes>
+    </test>
+</suite>
