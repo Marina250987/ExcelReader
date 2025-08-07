@@ -1,7 +1,10 @@
 package lesson_15;
 
+import lesson_18.UserCabinetPage;
+
 public enum Links {
-    LOGIN_PAGE("https://qa-course-01.andersenlab.com/login");
+    LOGIN_PAGE("https://qa-course-01.andersenlab.com/login"),
+    USER_CABINET_PAGE("https://qa-course-01.andersenlab.com/");
     private String link;
 
     public String getLink(){
