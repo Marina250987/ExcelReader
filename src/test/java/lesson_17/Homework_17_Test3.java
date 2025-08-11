@@ -1,5 +1,6 @@
 package lesson_17;
 
+import io.qameta.allure.*;
 import lesson_15.DriverSetUp;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -16,6 +17,8 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 
 
+@Epic("User Cabinet")
+@Feature("User Login and Course Enrollment")
 public class Homework_17_Test3 {
     private WebDriver driver;
     private WebDriverWait wait;
@@ -23,7 +26,9 @@ public class Homework_17_Test3 {
     private UserCabinetPage cabinetPage;
 
     @BeforeClass
+    @Step("Setting up the test environment")
     public void setUp() {
+
         driver = DriverSetUp.getDriver();
         wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         loginPage = new LoginPage(driver);
@@ -39,6 +44,8 @@ public class Homework_17_Test3 {
     }
 
     @Test
+    @Story("Course Enrollment and Cancellation")
+    @Description("Test the process of course enrollment, discount application, and course cancellation.")
     public void task3Test() {
         cabinetPage.hoverOverDropdown();
         cabinetPage.selectThirdDropdownOption();
@@ -86,6 +93,7 @@ public class Homework_17_Test3 {
     }
 
     @AfterClass
+    @Step("Closing the test environment")
     public void close() {
         DriverSetUp.quitDriver();
     }
