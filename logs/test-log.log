@@ -1,0 +1,33 @@
+2025-08-11 18:03:01,195 INFO lesson_17.LoginPage [main] LoginPage initialized with WebDriver
+2025-08-11 18:03:01,200 INFO lesson_17.UserCabinetPage [main] UserCabinetPage initialized with WebDriver
+2025-08-11 18:03:01,203 INFO lesson_17.LoginPage [main] Attempting to login with email: testovyiivan@mail.ru
+2025-08-11 18:03:01,851 DEBUG lesson_17.LoginPage [main] Email entered successfully
+2025-08-11 18:03:01,910 DEBUG lesson_17.LoginPage [main] Password entered successfully
+2025-08-11 18:03:01,951 INFO lesson_17.LoginPage [main] Login button clicked
+2025-08-11 18:03:02,490 INFO lesson_17.LoginPage [main] Successfully navigated to the home page after login
+2025-08-11 18:03:02,556 INFO lesson_17.UserCabinetPage [main] Hovering over dropdown
+2025-08-11 18:03:02,705 DEBUG lesson_17.UserCabinetPage [main] Successfully hovered over dropdown
+2025-08-11 18:03:02,705 INFO lesson_17.UserCabinetPage [main] Selecting first dropdown option
+2025-08-11 18:03:02,771 DEBUG lesson_17.UserCabinetPage [main] Successfully selected first dropdown option
+2025-08-11 18:03:05,492 INFO lesson_17.LoginPage [main] LoginPage initialized with WebDriver
+2025-08-11 18:03:05,492 INFO lesson_17.UserCabinetPage [main] UserCabinetPage initialized with WebDriver
+2025-08-11 18:03:05,492 INFO lesson_17.LoginPage [main] Attempting to login with email: testovyiivan@mail.ru
+2025-08-11 18:03:12,000 DEBUG lesson_17.LoginPage [main] Email entered successfully
+2025-08-11 18:03:12,069 DEBUG lesson_17.LoginPage [main] Password entered successfully
+2025-08-11 18:03:12,120 INFO lesson_17.LoginPage [main] Login button clicked
+2025-08-11 18:03:12,664 INFO lesson_17.LoginPage [main] Successfully navigated to the home page after login
+2025-08-11 18:03:12,687 INFO lesson_17.UserCabinetPage [main] Hovering over dropdown
+2025-08-11 18:03:12,837 DEBUG lesson_17.UserCabinetPage [main] Successfully hovered over dropdown
+2025-08-11 18:03:12,837 INFO lesson_17.UserCabinetPage [main] Selecting second dropdown option
+2025-08-11 18:03:12,886 DEBUG lesson_17.UserCabinetPage [main] Successfully selected second dropdown option
+2025-08-11 18:03:15,408 INFO lesson_17.LoginPage [main] LoginPage initialized with WebDriver
+2025-08-11 18:03:15,408 INFO lesson_17.UserCabinetPage [main] UserCabinetPage initialized with WebDriver
+2025-08-11 18:03:15,408 INFO lesson_17.LoginPage [main] Attempting to login with email: testovyiivan@mail.ru
+2025-08-11 18:03:15,969 DEBUG lesson_17.LoginPage [main] Email entered successfully
+2025-08-11 18:03:16,036 DEBUG lesson_17.LoginPage [main] Password entered successfully
+2025-08-11 18:03:16,080 INFO lesson_17.LoginPage [main] Login button clicked
+2025-08-11 18:03:16,630 INFO lesson_17.LoginPage [main] Successfully navigated to the home page after login
+2025-08-11 18:03:16,655 INFO lesson_17.UserCabinetPage [main] Hovering over dropdown
+2025-08-11 18:03:16,803 DEBUG lesson_17.UserCabinetPage [main] Successfully hovered over dropdown
+2025-08-11 18:03:16,803 INFO lesson_17.UserCabinetPage [main] Selecting third dropdown option
+2025-08-11 18:03:16,867 DEBUG lesson_17.UserCabinetPage [main] Successfully selected third dropdown option

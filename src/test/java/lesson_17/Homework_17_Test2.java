@@ -1,5 +1,9 @@
 package lesson_17;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import lesson_15.DriverSetUp;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -13,6 +17,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import java.time.Duration;
 
+@Epic("User Cabinet")
+@Feature("User Login and Sort responsibilities")
 public class Homework_17_Test2 {
     private WebDriver driver;
     private WebDriverWait wait;
@@ -21,6 +27,7 @@ public class Homework_17_Test2 {
 
     @BeforeClass
     public void setUp() {
+
         driver = DriverSetUp.getDriver();
         wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         loginPage = new LoginPage(driver);
@@ -34,8 +41,9 @@ public class Homework_17_Test2 {
             Assert.fail("Failed to login or navigate to user cabinet page: " + e.getMessage());
         }
     }
-
     @Test
+    @Description("Test user login and sorting manual and automation responsibilities")
+    @Story("The user should be able to drag and drop cards with responsibilities into the desired field")
     public void task2Test() throws InterruptedException {
         cabinetPage.hoverOverDropdown();
         cabinetPage.selectSecondDropdownOption();

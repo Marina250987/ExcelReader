@@ -1,4 +1,9 @@
 package lesson_17;
+
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import lesson_15.DriverSetUp;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -18,6 +23,8 @@ import java.time.temporal.TemporalAdjusters;
 import java.util.List;
 
 
+@Epic("User Cabinet")
+@Feature("User Login and Course Selection")
 public class Homework_17_Test1 {
     private WebDriver driver;
     private WebDriverWait wait;
@@ -26,6 +33,7 @@ public class Homework_17_Test1 {
 
     @BeforeClass
     public void setUp() {
+
         driver = DriverSetUp.getDriver();
         wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         loginPage = new LoginPage(driver);
@@ -41,6 +49,8 @@ public class Homework_17_Test1 {
     }
 
     @Test
+    @Description("Test user login and course selection functionality")
+    @Story("User should be able to select courses based on criteria")
     public void task1Test() {
         cabinetPage.hoverOverDropdown();
         cabinetPage.selectFirstDropdownOption();
