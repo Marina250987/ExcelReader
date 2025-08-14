@@ -27,6 +27,7 @@ public class LoginPage {
     @FindBy(css = "button[type='submit']")
     private WebElement loginButton;
 
+
     @FindBy(xpath = "//img[@alt='logo']")
     private WebElement logo;
 
@@ -129,7 +130,7 @@ public class LoginPage {
         Assert.assertEquals(driver.getCurrentUrl(), Links.LOGIN_PAGE.getLink(), "User is logged in");
         return this;
     }
-    /*public LoginPage checkInvalidPasswordLogin(String email, String invalidPassword) {
+    public LoginPage checkInvalidPasswordLogin(String email, String invalidPassword) {
         Assert.assertEquals(driver.getCurrentUrl(), Links.LOGIN_PAGE.getLink(), "User is logged in with invalid password");
         Assert.assertTrue(passwordValidationMessage.isDisplayed(), "Validation message for Password field is not displayed");
         return this;
@@ -140,7 +141,6 @@ public class LoginPage {
         return this;
     }
 
-     */
 
     public LoginPage checkLoginButtonActiveState() {
         Actions actions = new Actions(driver);
@@ -167,5 +167,16 @@ public class LoginPage {
             Assert.assertTrue(minLengthValidationMessage.isDisplayed(), "Validation message for min length is not displayed");
         }
         return this;
+    }
+    public WebElement getEmailRequiredValidationMessage() {
+        return emailRequiredValidationMessage;
+    }
+
+    public WebElement getPasswordRequiredValidationMessage() {
+        return passwordRequiredValidationMessage;
+    }
+
+    public WebElement getLoginButton() {
+        return loginButton;
     }
 }
